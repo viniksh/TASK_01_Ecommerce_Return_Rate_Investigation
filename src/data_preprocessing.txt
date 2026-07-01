@@ -1,0 +1,24 @@
+data_preprocessing.py
+import pandas as pd
+
+def load_data(C:\Users\Downloads\Va\ecommerce_completed_dataset1):
+    return pd.read_csv(C:\Users\Downloads\Va\ecommerce_completed_dataset1)
+
+def clean_data(df):
+    df = df.drop_duplicates()
+    df = df.fillna(method="ffill")
+    return df
+
+
+analysis.py
+def return_rate(df):
+    return (df["Returned"].sum() / len(df)) * 100
+
+
+visualization.py
+import matplotlib.pyplot as plt
+
+def plot_returns(df):
+    df["Returned"].value_counts().plot(kind="bar")
+    plt.title("Returned vs Not Returned")
+    plt.show()
