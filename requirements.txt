@@ -1,1 +1,10 @@
-
+Packages:
+pandas
+numpy
+seaborn
+scipy
+scikit-learn
+matplotlib.pyplot
+train_test_split
+LabelEncoder
+RandomForestClassifier
